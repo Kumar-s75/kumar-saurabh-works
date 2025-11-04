@@ -17,12 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Punyakrit Singh Makhni | Portfolio",
+  title: "Kumar Saurabh | Portfolio",
   description:
-    "Personal portfolio of Punyakrit Singh Makhni showcasing web development projects, skills, and experience. Full-stack developer specializing in modern web technologies.",
+    "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience. Full-stack developer specializing in modern web technologies.",
   viewport: "width=device-width, initial-scale=1",
   keywords: [
-    "Punyakrit Singh Makhni",
+    "Kumar Saurabh",
     "portfolio",
     "web developer",
     "full-stack developer",
@@ -82,30 +82,30 @@ export const metadata: Metadata = {
     "OAuth",
     "OpenID Connect",
   ],
-  authors: [{ name: "Punyakrit Singh Makhni" }],
-  creator: "Punyakrit Singh Makhni",
-  publisher: "Punyakrit Singh Makhni",
+  authors: [{ name: "Kumar Saurabh" }],
+  creator: "Kumar Saurabh",
+  publisher: "Kumar Saurabh",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://punyakrit.dev"),
+  metadataBase: new URL(""),//replace with yours
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Punyakrit Singh Makhni | Portfolio",
+    title: "Kumar Saurabh | Portfolio",
     description:
-      "Personal portfolio of Punyakrit Singh Makhni showcasing web development projects, skills, and experience.",
-    url: "https://punyakrit.dev",
-    siteName: "Punyakrit Singh Makhni Portfolio",
+      "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience.",
+    url: "",
+    siteName: "Kumar Saurabh Portfolio",
     images: [
       {
         url: "/ui.png",
         width: 1200,
         height: 630,
-        alt: "Punyakrit Singh Makhni Portfolio Preview",
+        alt: "Kumar Saurabh Portfolio Preview",
       },
     ],
     locale: "en_US",
@@ -113,9 +113,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Punyakrit Singh Makhni | Portfolio",
+    title: "Kumar Saurabh | Portfolio",
     description:
-      "Personal portfolio of Punyakrit Singh Makhni showcasing web development projects, skills, and experience.",
+      "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience.",
     images: ["/ui.png"],
   },
   robots: {
