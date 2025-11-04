@@ -25,7 +25,7 @@ function AboutMe() {
   transition={{ duration: 0.3, delay: 0.75 }}
   whileHover={{ color: "rgba(255, 255, 255, 0.9)" }}
 >
-  I&apos;m Punyakrit, a full-stack developer who thrives on turning ambitious 
+  I&apos;m  Kumar Saurabh, a full-stack developer who thrives on turning ambitious 
   ideas into production-ready products. With 2+ years shipping features at 
   startups, I bring expertise in React, Node.js, and cloud technologies to 
   build applications that scale. I believe great code tells a story - clean, 
