@@ -71,7 +71,7 @@ function IntroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
-              Hello, I&apos;m Punyakrit
+              Hello, I&apos;m Kumar Saurabh
             </motion.h1>
             <motion.p
               className="text-white/70 text-sm sm:text-base relative h-6 overflow-hidden"
@@ -104,9 +104,9 @@ function IntroSection() {
           whileTap={{ scale: 0.95 }}
           className="group"
         >
-          <Link href={"https://drive.google.com/file/d/1Bd8AEiYk9OyTV6Oe0UqGDjuLKLjZcqcK/view?usp=sharing"} target="_blank">
+          <Link href={"https://drive.google.com/file/d/1V74Obq4OU94ZZOdmZiMATnDXFLCQerxR/view?usp=sharing"} target="_blank">
             <div className="text-sm sm:text-md text-white/70 font-semibold sm:flex hidden relative">
-              <span>Hiring? Check out My CV.</span>
+              <span>Hiring? Check out My Resume.</span>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out origin-center" />
             </div>
           </Link>
