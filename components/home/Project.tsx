@@ -119,7 +119,7 @@ function Project() {
         >
           {displayedProjects.map((project, index) => (
             <motion.div
-              key={`punyakrit-project-${index}`}
+              key={`saurabh-project-${index}`}
               className="group relative overflow-hidden border border-white/20 rounded-xl p-4 sm:p-6 hover:border-white/30 transition-all duration-300 hover:shadow-lg"
               whileTap={{ scale: 0.98 }}
             >
@@ -182,7 +182,7 @@ function Project() {
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <motion.span
-                      key={`punyakrit-project-tech-${techIndex}`}
+                      key={`saurabh-project-tech-${techIndex}`}
                       className="px-2 sm:px-3 py-1 text-xs font-medium rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-all duration-300"
                       transition={{ duration: 0.2 }}
                     >

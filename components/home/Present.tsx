@@ -26,11 +26,11 @@ function Present() {
         transition={{ duration: 0.3, delay: 1.0 }}
         whileHover={{ color: "rgba(255, 255, 255, 0.9)" }}
       >
-        Currently I&apos;m focused on building innovative projects like Codelens, Pulse, and Arcane. 
+        Currently I&apos;m focused on building innovative projects and undergoing an internship at CyberxDelta.
         I love creating full-stack applications that solve real problems and push the boundaries of what&apos;s possible. 
         Always excited to collaborate on new ideas and take on challenging projects.{" "}
         <Link
-          href="https://cal.com/punyakrit"
+          href="https://cal.com/kumar-saurabh-dev/15min"
           target="_blank"
           className="text-white/70 text-sm sm:text-md underline leading-relaxed"
         >
