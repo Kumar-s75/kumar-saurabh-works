@@ -4,26 +4,32 @@ import { Briefcase } from "lucide-react";
 import React from "react";
 
 const ExperienceArray = [
-  {
-    company: "AgentProd",
-    position: "Full-Stack Software Engineer",
-    date: "Jun 2024 - Sept 2025",
+   {
+    company: "CyberxDelta",
+    position: "Software Engineer Intern ",
+    date: "Oct 2025 - present",
     description: [
-      "Leading feature development in a fast-paced startup environment, shipping production code that increased user engagement by 25%",
-      "Built scalable backend systems with FastAPI and PostgreSQL, reducing API latency by 40%",
-      "Accelerated deployment cycles from 3 days to <12 hours through CI/CD automation with Docker and AWS",
-      "Maintaining 99.9% uptime while improving page load speeds by 35%"
+  " Led frontend architecture using React, TypeScript, TanStack Query — created reusable design patterns, improving developer velocity by 30%.",
+  "Boosted frontend performance by 40% via advanced pagination, API request de-duplication, caching, and dynamic loading "
     ],
   },
   {
-    company: "Freelance",
-    position: "Full-Stack Developer",
-    date: "Jan 2023 - May 2024",
+    company: "Suvidha Foundation",
+    position: "Full-Stack Developer Intern",
+    date: "Jun 2025 - Aug 2025",
     description: [
-      "Delivered 10+ production applications for international clients across E-commerce, SaaS, and portfolio domains",
-      "Built custom CMS solutions and RESTful APIs that reduced client maintenance costs by 30%",
-      "Specialized in React, Next.js, Node.js, and TypeScript with a 95% client retention rate",
-      "Managed complete project lifecycles remotely, from requirements to deployment"
+  " Led frontend architecture using React, TypeScript, TanStack Query — created reusable design patterns, improving developer velocity by 30%.",
+  "Boosted frontend performance by 40% via advanced pagination, API request de-duplication, caching, and dynamic loading "
+    ],
+  },
+  {
+    company: "Byteoski Developers",
+    position: "Backend Developer Intern",
+    date: "June 2024 - Aug 2024",
+    description: [
+ " Developed and deployed RESTful APIs using Django and Django REST Framework to support the Admin Dashboard.",
+ " Designed and optimized database models and queries in PostgreSQL, improving API response times by 30%.",
+ "Implemented authentication, role-based access control, and secure API endpoints to enhance system reliability"
     ],
   },
 ];
