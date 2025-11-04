@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     title: "Kumar Saurabh | Portfolio",
     description:
       "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience.",
-    url: "",
+    url: "",//replace with yours
     siteName: "Kumar Saurabh Portfolio",
     images: [
       {
