@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://punyakrit.dev/sitemap.xml',
+    // sitemap: 'https://punyakrit.dev/sitemap.xml',
+    ///replace with yours
   }
 }

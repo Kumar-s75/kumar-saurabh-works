@@ -45,7 +45,7 @@ function SocialsFooter() {
           <div className="bg-white/20 w-px h-4 sm:h-6 mx-1"></div>
           <Link href="/" className="cursor-pointer">
           <Image 
-            src="/img.jpg" 
+            src="/saurabhpic.jpg" 
             alt="Profile" 
             width={24} 
             height={24} 

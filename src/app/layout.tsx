@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(""),//replace with yours
+  // metadataBase: new URL(""),//replace with yours
   alternates: {
     canonical: "/",
   },

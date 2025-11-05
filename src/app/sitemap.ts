@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://punyakrit.dev'
-  
+  const baseUrl = ''
+  //replace with your url
   return [
     {
       url: baseUrl,
