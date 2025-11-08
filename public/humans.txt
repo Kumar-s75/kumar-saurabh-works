@@ -1,5 +1,5 @@
 /* TEAM */
-    Developer: Punyakrit Singh Makhni
+    Developer: Kumar Saurabh
     From: India
 
 /* SITE */

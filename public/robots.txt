@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://punyakrit.dev/sitemap.xml
+Sitemap: https://saurabhdomain/sitemap.xml
 
 

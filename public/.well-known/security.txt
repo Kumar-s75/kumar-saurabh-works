@@ -1,4 +1,5 @@
-Contact: mailto:security@punyakrit.dev
+Contact: mailto:
 Expires: 2025-12-31T23:59:59.000Z
 Preferred-Languages: en
-Canonical: https://punyakrit.dev/.well-known/security.txt
+Canonical: https://saurabh.domain/.well-known/security.txt
+write your details here!
