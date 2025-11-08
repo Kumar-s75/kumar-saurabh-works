@@ -5,66 +5,65 @@ import { ExternalLink, Github, ChevronDown, Play, X } from "lucide-react";
 
 const ProjectArray = [
   {
-      name: "Codelens",
+      name: "LFX-issue-Tracker",
       description:
         "CodeLens is an AI-powered GitHub code analysis and collaboration tool that streamlines development workflows. It enables natural language code search, auto-generated documentation, and AI-assisted pull requests — all synced in real time with GitHub. With vector embeddings and Gemini AI, it provides deep insights and faster collaboration.",
-      url: "https://codelens.punyakrit.dev",
-      github: "https://github.com/punyakrit/codelens",
-      video: "https://nooskjgrslpgyitgkovi.supabase.co/storage/v1/object/public/video-upload/codelens.mp4",
+      url: "",
+      github: "https://github.com/Kumar-s75/lfx-issue-tracker",
+      video: "",
       tech: [
         "Next.js",
-        "Prisma",
+        " Nodejs",
         "PostgreSQL",
-        "GitHub API",
-        "Gemini API",
-        "Vector Database",
+        "AWS Ec2",
+       
       ],
   },
-  {
-    name: "Pulse",
-    description:
-      "Pulse is a website uptime and performance monitoring platform that helps teams keep their services reliable. It continuously checks websites, logs performance metrics, and alerts on downtime — with a clean dashboard for real-time insights and historical trends.",
-    url: "https://pulse.punyakrit.dev",
-    github: "https://github.com/punyakrit/pulse",
-    video: "https://nooskjgrslpgyitgkovi.supabase.co/storage/v1/object/public/video-upload/pulse%20(1).mp4",
-    tech: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "PostgreSQL",
-      "EC2",
-    ],
-  },
-  {
-    name: "Arcane",
-    description:
-      "Arcane is a collaborative workspace that lets users create multiple workspaces, organize content into folders and files, and share them seamlessly with teammates. With real-time editing powered by Socket.io, it enables fast, synchronized collaboration across teams.",
-    url: "https://arcane.punyakrit.dev",
-    github: "https://github.com/punyakrit/arcane",
-    tech: [
-      "Next.js",
-      "Supabase",
-      "Tailwind CSS",
-      "TypeScript",
-      "PostgreSQL",
-      "Socket.io",
-    ],
-  },
-  {
-    name: "SolBot",
-    description:
-      "A modern, responsive landing page for SolBot built with Next.js, shadcn/ui, Tailwind CSS, and Framer Motion. Designed with clean layouts, smooth animations, and reusable components, it highlights SolBot's features while staying fast and scalable.",
-    url: "https://solbot.punyakrit.dev/",
-    github: "https://github.com/punyakrit/solbot",
-    tech: [
-      "Next.js",
-      "shadcn/ui",
-      "Tailwind CSS",
-      "Framer Motion",
-      "TypeScript",
-    ],
-  },
+  // {
+  //   name: "Pulse",
+  //   description:
+  //     "Pulse is a website uptime and performance monitoring platform that helps teams keep their services reliable. It continuously checks websites, logs performance metrics, and alerts on downtime — with a clean dashboard for real-time insights and historical trends.",
+  //   url: "https://pulse.punyakrit.dev",
+  //   github: "https://github.com/punyakrit/pulse",
+  //   video: "https://nooskjgrslpgyitgkovi.supabase.co/storage/v1/object/public/video-upload/pulse%20(1).mp4",
+  //   tech: [
+  //     "React",
+  //     "Next.js",
+  //     "Tailwind CSS",
+  //     "TypeScript",
+  //     "PostgreSQL",
+  //     "EC2",
+  //   ],
+  // },
+  // {
+  //   name: "Arcane",
+  //   description:
+  //     "Arcane is a collaborative workspace that lets users create multiple workspaces, organize content into folders and files, and share them seamlessly with teammates. With real-time editing powered by Socket.io, it enables fast, synchronized collaboration across teams.",
+  //   url: "https://arcane.punyakrit.dev",
+  //   github: "https://github.com/punyakrit/arcane",
+  //   tech: [
+  //     "Next.js",
+  //     "Supabase",
+  //     "Tailwind CSS",
+  //     "TypeScript",
+  //     "PostgreSQL",
+  //     "Socket.io",
+  //   ],
+  // },
+  // {
+  //   name: "SolBot",
+  //   description:
+  //     "A modern, responsive landing page for SolBot built with Next.js, shadcn/ui, Tailwind CSS, and Framer Motion. Designed with clean layouts, smooth animations, and reusable components, it highlights SolBot's features while staying fast and scalable.",
+  //   url: "https://solbot.punyakrit.dev/",
+  //   github: "https://github.com/punyakrit/solbot",
+  //   tech: [
+  //     "Next.js",
+  //     "shadcn/ui",
+  //     "Tailwind CSS",
+  //     "Framer Motion",
+  //     "TypeScript",
+  //   ],
+  // },
   
 ];
 

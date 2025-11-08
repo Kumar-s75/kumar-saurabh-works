@@ -102,7 +102,7 @@ export const metadata: Metadata = {
     siteName: "Kumar Saurabh Portfolio",
     images: [
       {
-        url: "/ui.png",
+        url: "",
         width: 1200,
         height: 630,
         alt: "Kumar Saurabh Portfolio Preview",
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
     title: "Kumar Saurabh | Portfolio",
     description:
       "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience.",
-    images: ["/ui.png"],
+    images: [""],
   },
   robots: {
     index: true,
