@@ -16,7 +16,7 @@ const socials = [
   },
   {
     name: "X",
-    url: "https://www.x.com/punyakrit_22",
+    url: "https://x.com/Kumars_27",
     icon: X,
   },
   {
