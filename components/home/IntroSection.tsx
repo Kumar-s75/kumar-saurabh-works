@@ -71,7 +71,7 @@ function IntroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
-              Hello, I&apos;m Kumar Saurabh
+              Hello, I&apos;m  Saurabh
             </motion.h1>
             <motion.p
               className="text-white/70 text-sm sm:text-base relative h-6 overflow-hidden"
