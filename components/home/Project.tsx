@@ -7,7 +7,7 @@ const ProjectArray = [
   {
       name: "LFX-issue-Tracker",
       description:
-        "CodeLens is an AI-powered GitHub code analysis and collaboration tool that streamlines development workflows. It enables natural language code search, auto-generated documentation, and AI-assisted pull requests — all synced in real time with GitHub. With vector embeddings and Gemini AI, it provides deep insights and faster collaboration.",
+        "This tracks issues on github repos of organisations participating in lfx program.",
       url: "",
       github: "https://github.com/Kumar-s75/lfx-issue-tracker",
       video: "",
@@ -19,22 +19,37 @@ const ProjectArray = [
        
       ],
   },
-  // {
-  //   name: "Pulse",
-  //   description:
-  //     "Pulse is a website uptime and performance monitoring platform that helps teams keep their services reliable. It continuously checks websites, logs performance metrics, and alerts on downtime — with a clean dashboard for real-time insights and historical trends.",
-  //   url: "https://pulse.punyakrit.dev",
-  //   github: "https://github.com/punyakrit/pulse",
-  //   video: "https://nooskjgrslpgyitgkovi.supabase.co/storage/v1/object/public/video-upload/pulse%20(1).mp4",
-  //   tech: [
-  //     "React",
-  //     "Next.js",
-  //     "Tailwind CSS",
-  //     "TypeScript",
-  //     "PostgreSQL",
-  //     "EC2",
-  //   ],
-  // },
+  {
+    name: "Betterup",
+    description:
+      "Better Up up is a website uptime and performance monitoring platform that helps teams keep their services reliable. It continuously checks websites, logs performance metrics, and alerts on downtime — with a clean dashboard for real-time insights and historical trends.",
+    url: "",
+    github: "https://github.com/Kumar-s75/Betterup",
+    video: "",
+    tech: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "PostgreSQL",
+      "EC2",
+    ],
+  },
+  {
+    name: "Ai-Presentation-Generator",
+    description:
+  "It is an AI-powered slide generator that takes user input prompts and generates structured presentations using Gemini AI. It supports both PDF and PPT export functionalities.",
+    url: "",
+    github: "https://github.com/Kumar-s75/presentation-generator",
+    video: "",
+    tech: [
+      "Nodejs",
+      "Go",
+      "Redis",
+      "PostgreSQL",
+      "Gemini API Key",
+    ],
+  },
   // {
   //   name: "Arcane",
   //   description:
