@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import IntroSection from "../../components/home/IntroSection";
+import IntroSection from "../components/home/IntroSection";
 import { motion } from "motion/react";
-import AboutMe from "../../components/home/AboutMe";
-import Present from "../../components/home/Present";
-import Skills from "../../components/home/Skills";
-import Experience from "../../components/home/Experience";
-import Project from "../../components/home/Project";
-import Footer from "../../components/home/Footer";
+import AboutMe from "../components/home/AboutMe";
+import Present from "../components/home/Present";
+import Skills from "../components/home/Skills";
+import Experience from "../components/home/Experience";
+import Project from "../components/home/Project";
+import Footer from "../components/home/Footer";
 
 function page() {
   return (
