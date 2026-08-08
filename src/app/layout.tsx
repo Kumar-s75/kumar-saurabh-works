@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import SocialsFooter from "../components/SocialsFooter";
-
-import Script from "next/script";
-import { ThemeProvider } from "../components/Ui";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,131 +16,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kumar Saurabh | Portfolio",
+  title: "Kumar Saurabh | Full-Stack Developer",
   description:
-    "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience. Full-stack developer specializing in modern web technologies.",
-  viewport: "width=device-width, initial-scale=1",
-  keywords: [
-    "Kumar Saurabh",
-    "portfolio",
-    "web developer",
-    "full-stack developer",
-    "React developer",
-    "Next.js developer",
-    "TypeScript developer",
-    "JavaScript developer",
-    "frontend developer",
-    "backend developer",
-    "UI/UX designer",
-    "software engineer",
-    "web application developer",
-    "mobile app developer",
-    "responsive web design",
-    "modern web development",
-    "React.js",
-    "Node.js",
-    "MongoDB",
-    "PostgreSQL",
-    "GraphQL",
-    "REST API",
-    "Git",
-    "GitHub",
-    "AWS",
-    "Vercel",
-    "Netlify",
-    "CSS3",
-    "HTML5",
-    "Tailwind CSS",
-    "Bootstrap",
-    "Redux",
-    "Zustand",
-    "Prisma",
-    "Docker",
-    "Kubernetes",
-    "CI/CD",
-    "agile development",
-    "scrum",
-    "test-driven development",
-    "unit testing",
-    "integration testing",
-    "performance optimization",
-    "SEO optimization",
-    "accessibility",
-    "responsive design",
-    "progressive web app",
-    "PWA",
-    "microservices",
-    "serverless",
-    "cloud computing",
-    "database design",
-    "API development",
-    "web security",
-    "authentication",
-    "authorization",
-    "JWT",
-    "OAuth",
-    "OpenID Connect",
-  ],
-  authors: [{ name: "Kumar Saurabh" }],
-  creator: "Kumar Saurabh",
-  publisher: "Kumar Saurabh",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  // metadataBase: new URL(""),//replace with yours
-  alternates: {
-    canonical: "/",
+    "Full stack developer building clean, modern websites and apps with a focus on design, functionality, and attention to detail.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "256x256" },
+    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
   },
   openGraph: {
-    title: "Kumar Saurabh | Portfolio",
+    title: "Kumar Saurabh | Full-Stack Developer",
     description:
-      "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience.",
-    url: "",//replace with yours
-    siteName: "Kumar Saurabh Portfolio",
-    images: [
-      {
-        url: "",
-        width: 1200,
-        height: 630,
-        alt: "Kumar Saurabh Portfolio Preview",
-      },
-    ],
-    locale: "en_US",
+      "Full stack developer building clean, modern websites and apps.",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Kumar Saurabh | Portfolio",
-    description:
-      "Personal portfolio of Kumar Saurabh showcasing web development projects, skills, and experience.",
-    images: [""],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  manifest: "/manifest.json",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
-  other: {
-    "google-site-verification": "your-google-verification-code",
-    "msvalidate.01": "your-bing-verification-code",
-  },
 };
-
-
-
 
 export default function RootLayout({
   children,
@@ -149,38 +40,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-GH95JVWL77"
-      />
-      <Script id="google-analytics">
-        {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GH95JVWL77');`}
-      </Script>
-      <Script id="microsoft-clarity">
-        {`
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "tpoy4vtmng");`}
-      </Script>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-       <ThemeProvider
-            attribute="class"
-            forcedTheme="dark"
-            disableTransitionOnChange
-          >
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col dark:bg-black dark:text-zinc-50 transition-colors duration-300">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
-          </ThemeProvider>
-        <SocialsFooter />
+        </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

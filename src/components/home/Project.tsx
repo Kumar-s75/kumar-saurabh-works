@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, ChevronDown, Play, X } from "lucide-react";
+import { ExternalLink, ChevronDown, Play, X } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 
 const ProjectArray = [
   {
@@ -182,7 +183,7 @@ function Project() {
                       whileHover={{ scale: 1.1, rotate: -5 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Github className="w-3 h-3 sm:w-4 sm:h-4 group-hover/link:scale-110 transition-transform duration-300" />
+                      <SiGithub className="w-3 h-3 sm:w-4 sm:h-4 group-hover/link:scale-110 transition-transform duration-300" />
                     </motion.a>
                   </div>
                 </div>

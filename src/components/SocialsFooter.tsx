@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, X } from "lucide-react";
+import { Mail, X } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,12 +8,12 @@ const socials = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/kumar-saurabh786/",
-    icon: Linkedin,
+    icon: SiLinkedin,
   },
   {
     name: "GitHub",
     url: "https://github.com/Kumar-s75",
-    icon: Github,
+    icon: SiGithub,
   },
   {
     name: "X",

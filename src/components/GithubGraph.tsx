@@ -53,7 +53,8 @@ export function GithubGraph() {
 
   useEffect(() => {
     const fetchContributions = async () => {
-      const cacheKey = "github_contributions";
+      const username = "Kumar-s75";
+      const cacheKey = `github_contributions_${username.toLowerCase()}`;
       const cachedData = typeof window !== "undefined" ? localStorage.getItem(cacheKey) : null;
       
       if (cachedData) {
@@ -70,7 +71,7 @@ export function GithubGraph() {
 
       const query = `
         query {
-          user(login: "Ashutoshx7") {
+          user(login: "${username}") {
             contributionsCollection {
               contributionCalendar {
                 totalContributions
@@ -112,6 +113,8 @@ export function GithubGraph() {
               totalContributions: calendar.totalContributions
             }));
           }
+        } else if (data?.error) {
+          console.error("GitHub contributions request failed", data);
         }
       } catch (error) {
         console.error("Failed to fetch GitHub contributions", error);
@@ -222,7 +225,7 @@ export function GithubGraph() {
       </div>
 
       <p id="github-activity-summary" className="sr-only">
-        Calendar heatmap showing daily GitHub contribution counts for Ashutoshx7 over the last year. Scroll horizontally to inspect all weeks.
+        Calendar heatmap showing daily GitHub contribution counts for Kumar-s75 over the last year. Scroll horizontally to inspect all weeks.
       </p>
 
       {/* Graph content — sits directly on the page background */}

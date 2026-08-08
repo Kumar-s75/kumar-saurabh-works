@@ -33,9 +33,9 @@ type GitHubSearchResponse = {
 type FilterType = "merged" | "open" | "closed";
 
 const SEARCH_QUERIES: Record<FilterType, string> = {
-  merged: "author:Ashutoshx7 type:pr is:merged",
-  open: "author:Ashutoshx7 type:pr is:open",
-  closed: "author:Ashutoshx7 type:pr is:closed is:unmerged",
+  merged: "author:Kumar-s75 type:pr is:merged",
+  open: "author:Kumar-s75 type:pr is:open",
+  closed: "author:Kumar-s75 type:pr is:closed is:unmerged",
 };
 
 function buildGraphQLQuery(searchQuery: string) {
@@ -76,7 +76,7 @@ export function OpenSourceContributions({ isFullPage = false }: { isFullPage?: b
   const fetchedRef = useRef(false);
 
   const fetchPRsForType = useCallback(async (type: FilterType) => {
-    const cacheKey = `github_prs_${type}`;
+    const cacheKey = `github_prs_kumar-s75_${type}`;
     const cachedData = typeof window !== 'undefined' ? localStorage.getItem(cacheKey) : null;
 
     // Immediately populate from cache if available
@@ -103,7 +103,7 @@ export function OpenSourceContributions({ isFullPage = false }: { isFullPage?: b
       if (data.data?.search?.edges) {
         const fetchedPRs = data.data.search.edges
           .flatMap((edge) => (edge?.node ? [edge.node] : []))
-          .filter((pr: PR) => !(pr.title === "Main" && pr.repository.nameWithOwner === "Ashutoshx7/flexprice-storybook"));
+          .filter((pr: PR) => !(pr.title === "Main" && pr.repository.nameWithOwner === "Kumar-s75/flexprice-storybook"));
         fetchedPRs.sort((a: PR, b: PR) => {
           const dateA = new Date(b.mergedAt || b.closedAt || b.createdAt).getTime();
           const dateB = new Date(a.mergedAt || a.closedAt || a.createdAt).getTime();

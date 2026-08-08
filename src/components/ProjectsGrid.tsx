@@ -43,8 +43,8 @@ export const ProjectCard = ({
 
   const imageSrc = resolvedTheme === "light" && project.lightModeSrc ? project.lightModeSrc : project.src;
 
-  const isNotStarted = project.title === "Inquiro";
-  const isBuilding = project.title === "Blueprint" || project.title === "Scribble3D";
+  const isNotStarted = project.title === "Agentstack";
+  const isBuilding = project.title === "Presentation Generator" || project.title === "Betterup";
   const statusColor = isNotStarted ? "bg-zinc-400" : isBuilding ? "bg-red-500" : "bg-emerald-500";
   const statusLabel = isNotStarted ? "Not Started" : isBuilding ? "Building" : "Live";
 
