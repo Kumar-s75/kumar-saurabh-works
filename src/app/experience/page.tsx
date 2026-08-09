@@ -27,104 +27,75 @@ type ExperienceData = {
 
 const experiences: ExperienceData[] = [
   {
-    title: "Linux Foundation AI Security Mentorship",
-    role: "AI Security Intern, Caracal",
-    dates: "Jun 2026 - Present",
-    location: "Remote",
-    src: "/Experience-image/lf-decentralized-trust.png",
+    title: "Kagaar.Ai",
+    role: "Founding Software Engineer",
+    dates: "Feb 2026 - Apr 2026",
+    location: "Bengaluru, Karnataka",
+    src: "/Experience-image/pngegg (1).png",
     imageFit: "contain",
     imageZoom: 1,
     description: `
-      Building Caracal, an AI-agent security platform that enforces pre-execution authority checks before humans, agents, or services can trigger delegated actions
-      Designing policy-driven AI execution controls for request routing, approval gates, revocation checks, and common human-to-agent and agent-to-service workflows
-      Modeling delegation graphs that evaluate long and deep authority chains, resolve valid permission paths, and block unauthorized agent actions before execution
-      Integrating a secret vault layer so AI agents can use API keys and service credentials through policy-approved access without exposing raw secrets
-      Recording tamper-evident audit records and immutable proofs to a ledger-backed adapter for compliance, traceability, and AI-action accountability
-      Extending the platform toward agent policy negotiation, security reasoning modules, decentralized identity, verifiable credentials, and audit-derived policy recommendations
+      Built and shipped a responsive waitlist platform end-to-end using React and TypeScript, reducing page load time by 35% and achieving 95+ Lighthouse performance scores
+      Developed a dynamic Q&A section from concept to production, improving user engagement by 25% and reducing support queries by 15% through intuitive UI and seamless interactions
     `,
     tech: [
-      "AI Security",
-      "AI Agents",
-      "Policy Engines",
-      "Delegation Graphs",
-      "Secret Vaults",
-      "DLT",
-      "Audit Logs",
-      "DID/VC",
-      "Agent Security",
+      "React",
+      "TypeScript",
+      "Lighthouse",
+      "Q&A Systems",
     ],
     metrics: [
-      { label: "Core Components", value: "5" },
-      { label: "Principals", value: "3" },
-      { label: "Term", value: "Jun-Nov" },
-      { label: "Audit Trail", value: "Ledger" },
+      { label: "Page Load", value: "-35%" },
+      { label: "Lighthouse", value: "95+" },
+      { label: "Engagement", value: "+25%" },
+      { label: "Support Queries", value: "-15%" },
     ],
   },
   {
-    title: "Google Summer of Code 2026",
-    role: "AI Intern, Sugar Labs",
-    dates: "May 2026 - Present",
-    location: "Remote",
-    src: "/Experience-image/Google_Summer_of_Code_sun_logo_2022.svg (1).png",
+    title: "CyberxDelta",
+    role: "Software Engineer Intern",
+    dates: "Oct 2025 - Dec 2025",
+    location: "Bengaluru, Karnataka",
+    src: "/Experience-image/pngegg (1).png",
     imageFit: "contain",
     imageZoom: 0.9,
     description: `
-      Building Activity On Demand, a constructionist AI workflow that helps learners create, inspect, modify, and remix real Sugar activities instead of passively receiving generated code
-      Designing a GTK3 experience launched from Sugar's Home View with prompt ideation, template selection, provider policy, generation progress, and Use - Modify - Create learning modes
-      Implementing the core Python architecture across ActivitySpec, template inference, RAG-grounded planning, Gemini/local provider flows, SQLite job history, session revisions, provenance, and validation
-      Developing a guided Studio with file tree navigation, annotated source viewing, AST-based code explanations, editable-region challenges, live validation, version diffs, and reflection prompts
-      Building classroom-ready safeguards with provider profiles, teacher-controlled settings, API-key storage, forbidden import/call validation, template fallback, and retry-on-validation loops
-      Supporting the Sugar Labs community by reviewing contributor pull requests, onboarding new developers, discussing issues, and helping applicants clarify GSoC proposal problem statements
+      Worked with cross-functional teams to redesign the website, improving UI consistency and contributing to a 20% increase in user retention
+      Architected a unified design system, reducing UI inconsistencies by 40% and enhancing user experience
     `,
     tech: [
-      "Python",
-      "GTK3",
-      "Sugar",
-      "Gemini API",
-      "SQLite",
-      "AST",
-      "RAG",
-      "LLM Safety",
+      "React",
+      "TypeScript",
+      "Design Systems",
+      "UI/UX",
     ],
     metrics: [
-      { label: "Learning Modes", value: "3" },
-      { label: "Architecture Layers", value: "5" },
-      { label: "Modules", value: "14+" },
-      { label: "RAG Docs", value: "16+" },
+      { label: "Retention", value: "+20%" },
+      { label: "UI Consistency", value: "+40%" },
     ],
   },
   {
-    title: "Vercel OSS Program x VengenceUI",
-    role: "Founder & Maintainer",
-    dates: "Oct 2025 - Present",
-    location: "Remote",
-    src: "/Experience-image/vercel-symbol-colored-light.png",
+    title: "Suvidha Foundation",
+    role: "Full Stack Intern",
+    dates: "Jun 2025 - Aug 2025",
+    location: "Nagpur, Maharashtra",
+    src: "/Experience-image/pngegg (1).png",
     imageFit: "contain",
     imageZoom: 0.72,
     description: `
-      Selection: VengenceUI was chosen for Vercel's Winter 2026 Open Source Program in March 2026 as a composable, performance-first UI system for real-world product workflows
-      VengenceUI v1: Founded the open-source animated component library in October 2025 and grew it to 683 GitHub stars, 40 forks, and a 10-contributor community
-      Monthly traction: Grew from 30,000 to 40,000 monthly visitors and from 120,000 to 200,000 monthly page views while maintaining a 34% bounce rate
-      VengenceUI v2: Rebuilt the product from the ground up with 50+ production-ready components, stronger visual consistency, improved documentation, and a faster component-discovery experience
-      Developer experience: Designed copy-paste installation flows, reusable registry components, interactive previews, responsive documentation, and clearer integration guidance
-      Engineering: Led architecture, design systems, component APIs, animation quality, performance optimization, accessibility, deployment, analytics, and community contributions across both versions
+      Built frontend using React, TypeScript, and TanStack Query, improving development efficiency by 30%
+      Optimized API calls and implemented caching, improving application performance by 40%
     `,
     tech: [
-      "Next.js",
       "React",
       "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "MDX",
-      "Vercel",
+      "TanStack Query",
+      "API Design",
     ],
     metrics: [
-      { label: "GitHub Stars", value: "683" },
-      { label: "Monthly Visitors", value: "30,000 - 40,000" },
-      { label: "Monthly Page Views", value: "120,000 - 200,000" },
-      { label: "V2 Components", value: "50+" },
+      { label: "Efficiency", value: "+30%" },
+      { label: "Performance", value: "+40%" },
     ],
-    screenshot: "/Experience-image/vercel-analytics-color.png",
   },
   {
     title: "Open Source Contributor",
@@ -159,54 +130,6 @@ const experiences: ExperienceData[] = [
       { label: "Merged", value: "72" },
       { label: "Still Open", value: "8" },
     ],
-  },
-  {
-    title: "Google Summer Of Code",
-    role: "Open Source Contributor",
-    dates: "May 2025 - August 2025",
-    location: "Remote",
-    src: "/Experience-image/Google_Summer_of_Code_sun_logo_2022.svg (1).png",
-    imageFit: "contain",
-    imageZoom: 0.9,
-    description: `
-      Built scalable solutions for open source organizations
-      Received mentorship from top engineers and industry experts
-      Contributed real-world features that impacted thousands of users
-      Optimized codebase performance and reduced technical debt significantly
-    `,
-    tech: ["Next.js", "TypeScript", "React", "Node.js"],
-  },
-  {
-    title: "C4GT",
-    role: "Open Source Contributor",
-    dates: "May 2025 - August 2025",
-    location: "Remote",
-    src: "https://static.wixstatic.com/media/060b0c_8029055ce0074bfaa4bb6d9f1c2c33d2~mv2.png/v1/fill/w_2266,h_2168,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/060b0c_8029055ce0074bfaa4bb6d9f1c2c33d2~mv2.png",
-    imageFit: "contain",
-    imageZoom: 1.2,
-    description: `
-      Developed innovative tools solving real developer problems
-      Shipped production features with 10k+ downloads
-      Collaborated with open source maintainers and communities
-      Authored technical documentation to streamline developer onboarding
-    `,
-    tech: ["Prisma", "Cloudflare", "LangChain", "TypeScript"],
-  },
-  {
-    title: "Open Source Contributor",
-    role: "Full Stack Developer",
-    dates: "December 2024 - April 2024",
-    location: "Remote",
-    src: "/Experience-image/pngegg (1).png",
-    imageFit: "contain",
-    imageZoom: 1.5,
-    description: `
-      Mastered React, Node.js, databases, and deployment technologies
-      Contributed to multiple popular open source projects
-      Built strong foundation in full-stack development practices
-      Participated in code reviews and community discussions actively
-    `,
-    tech: ["React", "Node.js", "TypeScript"],
   },
 ];
 

@@ -2,15 +2,10 @@
 
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
-import { flushSync } from "react-dom";
 import { useTheme } from "next-themes";
 import { playSound } from "@/lib/sound-engine";
 import { click003Sound } from "@/lib/click-003";
 import { cn } from "@/lib/utils";
-
-type ViewTransitionDocument = Document & {
-  startViewTransition?: (callback: () => void) => void;
-};
 
 function subscribeToClient() {
   return () => {};
@@ -44,18 +39,7 @@ export function ThemeToggle({ className }: { className?: string }) {
 
   const toggleTheme = () => {
     const nextTheme = isDark ? "light" : "dark";
-    const transitionDocument = document as ViewTransitionDocument;
-
-    if (!transitionDocument.startViewTransition) {
-      setTheme(nextTheme);
-      return;
-    }
-
-    transitionDocument.startViewTransition(() => {
-      flushSync(() => {
-        setTheme(nextTheme);
-      });
-    });
+    setTheme(nextTheme);
   };
 
   return (
