@@ -38,10 +38,20 @@ export const ProjectCard = ({
 }) => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
   const [shouldLoadHoverImage, setShouldLoadHoverImage] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
   const { resolvedTheme } = useTheme();
   const router = useRouter();
 
-  const imageSrc = resolvedTheme === "light" && project.lightModeSrc ? project.lightModeSrc : project.src;
+  // `resolvedTheme` is only known in the browser. Keep the initial client render
+  // identical to the server render, then swap to the light-mode preview after mount.
+  // This prevents Next from hydrating a different image URL than the one it rendered.
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  const imageSrc = hasMounted && resolvedTheme === "light" && project.lightModeSrc
+    ? project.lightModeSrc
+    : project.src;
 
   const isNotStarted = project.title === "Agentstack";
   const isBuilding = project.title === "Presentation Generator" || project.title === "Betterup";

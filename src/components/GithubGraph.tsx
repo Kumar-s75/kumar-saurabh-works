@@ -113,7 +113,7 @@ export function GithubGraph() {
               totalContributions: calendar.totalContributions
             }));
           }
-        } else if (data?.error) {
+        } else if (data?.error && response.status !== 401) {
           console.error("GitHub contributions request failed", data);
         }
       } catch (error) {

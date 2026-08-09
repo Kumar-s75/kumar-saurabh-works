@@ -25,7 +25,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   GitHub: {
     name: "Kumar Saurabh",
     handle: "Kumar-s75",
-    avatar: "https://github.com/Kumar-s75.png",
+    avatar: "https://avatars.githubusercontent.com/u/124514078?v=4",
     bio: "Full-stack developer and open-source contributor",
     location: "Jalandhar, Punjab, India",
     stats: [
@@ -36,7 +36,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   Twitter: {
     name: "Kumar Saurabh",
     handle: "@Kumars_27",
-    avatar: "https://github.com/Kumar-s75.png",
+    avatar: "https://avatars.githubusercontent.com/u/124514078?v=4",
     banner: darkBannerImage,
     bio: "Full-stack developer building useful products and tools",
     location: "Jalandhar, Punjab, India",
@@ -48,7 +48,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   LinkedIn: {
     name: "Kumar Saurabh",
     handle: "in/kumar-saurabh786",
-    avatar: "https://github.com/Kumar-s75.png",
+    avatar: "https://avatars.githubusercontent.com/u/124514078?v=4",
     banner: darkBannerImage,
     bio: "Full-stack developer open to interesting collaborations",
     location: "Jalandhar, Punjab, India",
@@ -59,7 +59,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   Medium: {
     name: "Kumar Saurabh",
     handle: "@Kumar-s75",
-    avatar: "https://github.com/Kumar-s75.png",
+    avatar: "https://avatars.githubusercontent.com/u/124514078?v=4",
     bio: "Writing about full-stack engineering, open source, and practical product development.",
     location: "Jalandhar, Punjab, India",
     stats: [
@@ -70,7 +70,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   Discord: {
     name: "Kumar Saurabh",
     handle: "Kumar-s75",
-    avatar: "https://github.com/Kumar-s75.png",
+    avatar: "https://avatars.githubusercontent.com/u/124514078?v=4",
     bio: "Available for conversations about products, code, and open source.",
     location: "",
     stats: [],

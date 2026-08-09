@@ -117,8 +117,8 @@ export default function Home() {
               {/* The inner image */}
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-[3px] sm:rounded-[5px] overflow-hidden bg-zinc-100 dark:bg-zinc-900">
                 <Image
-                  src="/avatar.png"
-                  alt="Profile"
+                  src="/saurabhpic.jpg"
+                  alt="Kumar Saurabh"
                   width={240}
                   height={240}
                   quality={90}
@@ -160,7 +160,7 @@ export default function Home() {
 
         {/* Buttons */}
         <div className="flex flex-wrap items-center gap-2 mt-4">
-          <FlipCoverButton href="/contact" label="Get in touch" />
+          <FlipCoverButton href="/contact" label="Book an intro call" />
           <Link href="/contact">
             <SoftPillButton
               as="span"

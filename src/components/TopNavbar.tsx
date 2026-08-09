@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CommandMenu } from "./command-menu";
 
@@ -51,6 +52,16 @@ export function TopNavbar() {
           : "bg-transparent border border-transparent"
           }`}
       >
+        <Link href="/" aria-label="Kumar Saurabh home" className="shrink-0">
+          <Image
+            src="/saurabhpic.jpg"
+            alt="Kumar Saurabh"
+            width={28}
+            height={28}
+            className="h-7 w-7 rounded-full object-cover ring-1 ring-black/10 dark:ring-white/15"
+          />
+        </Link>
+
         {links.map((link) => {
           const isActive = activeSection === link.href.slice(1);
           return (
